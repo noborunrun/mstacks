@@ -1,0 +1,815 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* IS3AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* IS3AppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		F601939F0EC4A21700BDC03D /* StackStockBooks.m in Sources */ = {isa = PBXBuildFile; fileRef = F601939E0EC4A21700BDC03D /* StackStockBooks.m */; };
+		F632004F0EDD54AA0050665E /* BookController.m in Sources */ = {isa = PBXBuildFile; fileRef = F632004E0EDD54AA0050665E /* BookController.m */; };
+		F63200510EDD54BC0050665E /* Book.xib in Resources */ = {isa = PBXBuildFile; fileRef = F63200500EDD54BC0050665E /* Book.xib */; };
+		F63C28FE0FE39598001C1DE6 /* MutterDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F63C28FD0FE39598001C1DE6 /* MutterDetailViewController.m */; };
+		F63C29000FE395A8001C1DE6 /* MutterDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F63C28FF0FE395A8001C1DE6 /* MutterDetailView.xib */; };
+		F63E731E0F2B6A07007D825E /* defaultBookImage.gif in Resources */ = {isa = PBXBuildFile; fileRef = F63E731D0F2B6A07007D825E /* defaultBookImage.gif */; };
+		F64E1DAE0F27818D00F35FE9 /* mutterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F64E1DAD0F27818D00F35FE9 /* mutterView.xib */; };
+		F657CD3E0F060B4B00216B84 /* ListMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = F657CD3D0F060B4B00216B84 /* ListMenuController.m */; };
+		F657CD8A0F0616F600216B84 /* tableListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F657CD890F0616F600216B84 /* tableListView.xib */; };
+		F65EB8730F28BE5E00869854 /* MutterController.m in Sources */ = {isa = PBXBuildFile; fileRef = F65EB8720F28BE5E00869854 /* MutterController.m */; };
+		F666E0520EDA8013007F6B34 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F666E0510EDA8013007F6B34 /* CoreGraphics.framework */; };
+		F6765D6F0F499F9E001894CD /* UpdateBookStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = F6765D6E0F499F9E001894CD /* UpdateBookStatus.m */; };
+		F68297D30F062F3800FC698E /* library_32x32_2.png in Resources */ = {isa = PBXBuildFile; fileRef = F68297D20F062F3800FC698E /* library_32x32_2.png */; };
+		F685EE8F0EED728D006F0A34 /* iS3_class.xcclassmodel in Resources */ = {isa = PBXBuildFile; fileRef = F685EE8E0EED728D006F0A34 /* iS3_class.xcclassmodel */; };
+		F690557A0F0DC37E0004AC30 /* testIcon.xcf in Resources */ = {isa = PBXBuildFile; fileRef = F69055760F0DC37E0004AC30 /* testIcon.xcf */; };
+		F6955F390F24D038007C5734 /* Default_old.png in Resources */ = {isa = PBXBuildFile; fileRef = F6955F380F24D038007C5734 /* Default_old.png */; };
+		F6A97A320EE14DAF007900B4 /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A97A310EE14DAF007900B4 /* Image.m */; };
+		F6AF17140F4D6F8800406C68 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6AF17130F4D6F8800406C68 /* AboutViewController.m */; };
+		F6AF17160F4D6F9D00406C68 /* AboutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6AF17150F4D6F9D00406C68 /* AboutView.xib */; };
+		F6AF17470F4D755B00406C68 /* about.txt in Resources */ = {isa = PBXBuildFile; fileRef = F6AF17460F4D755B00406C68 /* about.txt */; };
+		F6BCD51E0ED5AB9100C84A20 /* ReadBooksListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BCD51D0ED5AB9100C84A20 /* ReadBooksListController.m */; };
+		F6C522570EDC2E7A00E9A419 /* NowLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C522560EDC2E7A00E9A419 /* NowLoading.m */; };
+		F6CA03C00ED5B10E00874C72 /* WishBooksListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6CA03BF0ED5B10E00874C72 /* WishBooksListController.m */; };
+		F6CA03C30ED5B12100874C72 /* UnReadBooksListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6CA03C20ED5B12100874C72 /* UnReadBooksListController.m */; };
+		F6CA03C60ED5B13000874C72 /* ReadingBooksListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6CA03C50ED5B13000874C72 /* ReadingBooksListController.m */; };
+		F6CD0CA40FF8FF490062BF5D /* defaultBase.xcf in Resources */ = {isa = PBXBuildFile; fileRef = F6CD0CA20FF8FF490062BF5D /* defaultBase.xcf */; };
+		F6CD0CA50FF8FF490062BF5D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F6CD0CA30FF8FF490062BF5D /* Default.png */; };
+		F6DE66A90F2AF54B0012C7D7 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DE66A80F2AF54B0012C7D7 /* Reachability.m */; };
+		F6DE66B10F2AF5EB0012C7D7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DE66B00F2AF5EB0012C7D7 /* SystemConfiguration.framework */; };
+		F6E831880F485D36004C5665 /* PickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6E831870F485D36004C5665 /* PickerView.xib */; };
+		F6E8318D0F485D71004C5665 /* StatusPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E8318C0F485D71004C5665 /* StatusPickerViewController.m */; };
+		FA0634740EE7A65500B5963C /* Default_old.png in Resources */ = {isa = PBXBuildFile; fileRef = FA0634730EE7A65500B5963C /* Default_old.png */; };
+		FA06C3940EC7F7260062397E /* CanonDigitalCamera.png in Resources */ = {isa = PBXBuildFile; fileRef = FA06C3930EC7F7260062397E /* CanonDigitalCamera.png */; };
+		FA06C3960EC7F75D0062397E /* ikony-folder.png in Resources */ = {isa = PBXBuildFile; fileRef = FA06C3950EC7F75D0062397E /* ikony-folder.png */; };
+		FA06C39A0EC7F9A40062397E /* Setting.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA06C3990EC7F9A40062397E /* Setting.xib */; };
+		FA06C3B20EC7FC7F0062397E /* SettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA06C3B00EC7FC7F0062397E /* SettingController.m */; };
+		FA06C3C20EC7FE010062397E /* AllBookListController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA06C3C10EC7FE010062397E /* AllBookListController.m */; };
+		FA06C4B50EC828D90062397E /* BookListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA06C4B40EC828D90062397E /* BookListView.xib */; };
+		FA48A9760FE72F4800E65C69 /* switchStack.png in Resources */ = {isa = PBXBuildFile; fileRef = FA48A9750FE72F4800E65C69 /* switchStack.png */; };
+		FA48A9780FE7302C00E65C69 /* amazon.png in Resources */ = {isa = PBXBuildFile; fileRef = FA48A9770FE7302C00E65C69 /* amazon.png */; };
+		FA4E8B2E0ECC13F5003548A5 /* BookListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA4E8B2D0ECC13F5003548A5 /* BookListCell.xib */; };
+		FA4E8B320ECC14AF003548A5 /* BookListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4E8B310ECC14AF003548A5 /* BookListCell.m */; };
+		FA4E8B370ECC15FE003548A5 /* BookListCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4E8B360ECC15FE003548A5 /* BookListCellController.m */; };
+		FA5033430FF09DDF0056CD43 /* Amazon.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5033420FF09DDF0056CD43 /* Amazon.m */; };
+		FA5A99050EC4583A00A9E2FD /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5A99040EC4583A00A9E2FD /* User.m */; };
+		FA5A99080EC4584F00A9E2FD /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5A99070EC4584F00A9E2FD /* libsqlite3.0.dylib */; };
+		FA5A99100EC458FF00A9E2FD /* iS3.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = FA5A990F0EC458FF00A9E2FD /* iS3.sqlite */; };
+		FA61B0C10F132DF00074EA39 /* StatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA61B0C00F132DF00074EA39 /* StatusViewController.m */; };
+		FA71CAD70EF770A1009663D7 /* HttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = FA71CAD00EF770A1009663D7 /* HttpClient.m */; };
+		FA71CAD80EF770A1009663D7 /* ImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = FA71CAD20EF770A1009663D7 /* ImageDownloader.m */; };
+		FA71CAD90EF770A1009663D7 /* ImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = FA71CAD40EF770A1009663D7 /* ImageStore.m */; };
+		FA71CADA0EF770A1009663D7 /* StringHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FA71CAD60EF770A1009663D7 /* StringHelper.m */; };
+		FA73D56E0FA87DAB00DA0CAD /* library_32x32_Plus.png in Resources */ = {isa = PBXBuildFile; fileRef = FA73D56D0FA87DAB00DA0CAD /* library_32x32_Plus.png */; };
+		FA80BFF80FB30EB6003AD5A2 /* InputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA80BFF60FB30EB6003AD5A2 /* InputViewController.m */; };
+		FA80BFF90FB30EB6003AD5A2 /* InputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA80BFF70FB30EB6003AD5A2 /* InputViewController.xib */; };
+		FA85FBDB0F31668400BBC801 /* URLView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA85FBDA0F31668400BBC801 /* URLView.xib */; };
+		FA85FBE00F31670B00BBC801 /* AmazonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA85FBDF0F31670B00BBC801 /* AmazonViewController.m */; };
+		FAA952010ECE926700E7EB49 /* exec-32.png in Resources */ = {isa = PBXBuildFile; fileRef = FAA952000ECE926700E7EB49 /* exec-32.png */; };
+		FAA952030ECE92B300E7EB49 /* library_32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = FAA952020ECE92B300E7EB49 /* library_32x32.png */; };
+		FAA952050ECE94B200E7EB49 /* Aperture_32.png in Resources */ = {isa = PBXBuildFile; fileRef = FAA952040ECE94B200E7EB49 /* Aperture_32.png */; };
+		FAA952B40ECEB78600E7EB49 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FAA952B30ECEB78600E7EB49 /* icon.png */; };
+		FAFECFD30FF34E6700FF0516 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFECFD20FF34E6700FF0516 /* libxml2.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* IS3AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IS3AppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* IS3AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IS3AppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* iS3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iS3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* iS3_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iS3_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F601939D0EC4A21700BDC03D /* StackStockBooks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackStockBooks.h; sourceTree = "<group>"; };
+		F601939E0EC4A21700BDC03D /* StackStockBooks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackStockBooks.m; sourceTree = "<group>"; };
+		F632004D0EDD54AA0050665E /* BookController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookController.h; sourceTree = "<group>"; };
+		F632004E0EDD54AA0050665E /* BookController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookController.m; sourceTree = "<group>"; };
+		F63200500EDD54BC0050665E /* Book.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Book.xib; sourceTree = "<group>"; };
+		F63C28FC0FE39598001C1DE6 /* MutterDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MutterDetailViewController.h; sourceTree = "<group>"; };
+		F63C28FD0FE39598001C1DE6 /* MutterDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MutterDetailViewController.m; sourceTree = "<group>"; };
+		F63C28FF0FE395A8001C1DE6 /* MutterDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MutterDetailView.xib; sourceTree = "<group>"; };
+		F63E731D0F2B6A07007D825E /* defaultBookImage.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = defaultBookImage.gif; sourceTree = "<group>"; };
+		F64E1DAD0F27818D00F35FE9 /* mutterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = mutterView.xib; sourceTree = "<group>"; };
+		F657CD3C0F060B4B00216B84 /* ListMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListMenuController.h; sourceTree = "<group>"; };
+		F657CD3D0F060B4B00216B84 /* ListMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListMenuController.m; sourceTree = "<group>"; };
+		F657CD890F0616F600216B84 /* tableListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = tableListView.xib; sourceTree = "<group>"; };
+		F65EB8710F28BE5E00869854 /* MutterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MutterController.h; sourceTree = "<group>"; };
+		F65EB8720F28BE5E00869854 /* MutterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MutterController.m; sourceTree = "<group>"; };
+		F666E0510EDA8013007F6B34 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F6765D6D0F499F9E001894CD /* UpdateBookStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateBookStatus.h; sourceTree = "<group>"; };
+		F6765D6E0F499F9E001894CD /* UpdateBookStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateBookStatus.m; sourceTree = "<group>"; };
+		F68297D20F062F3800FC698E /* library_32x32_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = library_32x32_2.png; sourceTree = "<group>"; };
+		F685EE8E0EED728D006F0A34 /* iS3_class.xcclassmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcclassmodel; path = iS3_class.xcclassmodel; sourceTree = "<group>"; };
+		F69055760F0DC37E0004AC30 /* testIcon.xcf */ = {isa = PBXFileReference; lastKnownFileType = file; path = testIcon.xcf; sourceTree = "<group>"; };
+		F6955F380F24D038007C5734 /* Default_old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default_old.png; sourceTree = "<group>"; };
+		F6A97A300EE14DAF007900B4 /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		F6A97A310EE14DAF007900B4 /* Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Image.m; sourceTree = "<group>"; };
+		F6AF17120F4D6F8800406C68 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		F6AF17130F4D6F8800406C68 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		F6AF17150F4D6F9D00406C68 /* AboutView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutView.xib; sourceTree = "<group>"; };
+		F6AF17460F4D755B00406C68 /* about.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = about.txt; sourceTree = "<group>"; };
+		F6BCD51C0ED5AB9100C84A20 /* ReadBooksListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadBooksListController.h; sourceTree = "<group>"; };
+		F6BCD51D0ED5AB9100C84A20 /* ReadBooksListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadBooksListController.m; sourceTree = "<group>"; };
+		F6C522550EDC2E7A00E9A419 /* NowLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NowLoading.h; sourceTree = "<group>"; };
+		F6C522560EDC2E7A00E9A419 /* NowLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NowLoading.m; sourceTree = "<group>"; };
+		F6CA03BE0ED5B10D00874C72 /* WishBooksListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WishBooksListController.h; sourceTree = "<group>"; };
+		F6CA03BF0ED5B10E00874C72 /* WishBooksListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WishBooksListController.m; sourceTree = "<group>"; };
+		F6CA03C10ED5B12100874C72 /* UnReadBooksListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnReadBooksListController.h; sourceTree = "<group>"; };
+		F6CA03C20ED5B12100874C72 /* UnReadBooksListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnReadBooksListController.m; sourceTree = "<group>"; };
+		F6CA03C40ED5B13000874C72 /* ReadingBooksListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadingBooksListController.h; sourceTree = "<group>"; };
+		F6CA03C50ED5B13000874C72 /* ReadingBooksListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadingBooksListController.m; sourceTree = "<group>"; };
+		F6CD0CA20FF8FF490062BF5D /* defaultBase.xcf */ = {isa = PBXFileReference; lastKnownFileType = file; path = defaultBase.xcf; sourceTree = "<group>"; };
+		F6CD0CA30FF8FF490062BF5D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		F6DE66A70F2AF54B0012C7D7 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		F6DE66A80F2AF54B0012C7D7 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		F6DE66B00F2AF5EB0012C7D7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F6E831870F485D36004C5665 /* PickerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickerView.xib; sourceTree = "<group>"; };
+		F6E8318B0F485D70004C5665 /* StatusPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusPickerViewController.h; sourceTree = "<group>"; };
+		F6E8318C0F485D71004C5665 /* StatusPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusPickerViewController.m; sourceTree = "<group>"; };
+		F6F41A560F47E4EB00C70B54 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		FA0634730EE7A65500B5963C /* Default_old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default_old.png; sourceTree = "<group>"; };
+		FA06C3930EC7F7260062397E /* CanonDigitalCamera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CanonDigitalCamera.png; sourceTree = "<group>"; };
+		FA06C3950EC7F75D0062397E /* ikony-folder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ikony-folder.png"; sourceTree = "<group>"; };
+		FA06C3990EC7F9A40062397E /* Setting.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Setting.xib; sourceTree = "<group>"; };
+		FA06C3B00EC7FC7F0062397E /* SettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingController.m; sourceTree = "<group>"; };
+		FA06C3B10EC7FC7F0062397E /* SettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingController.h; sourceTree = "<group>"; };
+		FA06C3C00EC7FE010062397E /* AllBookListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllBookListController.h; sourceTree = "<group>"; };
+		FA06C3C10EC7FE010062397E /* AllBookListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllBookListController.m; sourceTree = "<group>"; };
+		FA06C4B40EC828D90062397E /* BookListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookListView.xib; sourceTree = "<group>"; };
+		FA48A9750FE72F4800E65C69 /* switchStack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchStack.png; sourceTree = "<group>"; };
+		FA48A9770FE7302C00E65C69 /* amazon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amazon.png; sourceTree = "<group>"; };
+		FA4E8B2D0ECC13F5003548A5 /* BookListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookListCell.xib; sourceTree = "<group>"; };
+		FA4E8B300ECC14AF003548A5 /* BookListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookListCell.h; sourceTree = "<group>"; };
+		FA4E8B310ECC14AF003548A5 /* BookListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookListCell.m; sourceTree = "<group>"; };
+		FA4E8B350ECC15FE003548A5 /* BookListCellController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookListCellController.h; sourceTree = "<group>"; };
+		FA4E8B360ECC15FE003548A5 /* BookListCellController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookListCellController.m; sourceTree = "<group>"; };
+		FA5033410FF09DDF0056CD43 /* Amazon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Amazon.h; sourceTree = "<group>"; };
+		FA5033420FF09DDF0056CD43 /* Amazon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Amazon.m; sourceTree = "<group>"; };
+		FA5A99030EC4583A00A9E2FD /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		FA5A99040EC4583A00A9E2FD /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		FA5A99070EC4584F00A9E2FD /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		FA5A990F0EC458FF00A9E2FD /* iS3.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = iS3.sqlite; sourceTree = "<group>"; };
+		FA61B0BF0F132DF00074EA39 /* StatusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusViewController.h; sourceTree = "<group>"; };
+		FA61B0C00F132DF00074EA39 /* StatusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusViewController.m; sourceTree = "<group>"; };
+		FA71CACF0EF770A1009663D7 /* HttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpClient.h; sourceTree = "<group>"; };
+		FA71CAD00EF770A1009663D7 /* HttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpClient.m; sourceTree = "<group>"; };
+		FA71CAD10EF770A1009663D7 /* ImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDownloader.h; sourceTree = "<group>"; };
+		FA71CAD20EF770A1009663D7 /* ImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDownloader.m; sourceTree = "<group>"; };
+		FA71CAD30EF770A1009663D7 /* ImageStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageStore.h; sourceTree = "<group>"; };
+		FA71CAD40EF770A1009663D7 /* ImageStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageStore.m; sourceTree = "<group>"; };
+		FA71CAD50EF770A1009663D7 /* StringHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringHelper.h; sourceTree = "<group>"; };
+		FA71CAD60EF770A1009663D7 /* StringHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringHelper.m; sourceTree = "<group>"; };
+		FA73D56D0FA87DAB00DA0CAD /* library_32x32_Plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = library_32x32_Plus.png; sourceTree = "<group>"; };
+		FA80BFF50FB30EB6003AD5A2 /* InputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputViewController.h; sourceTree = "<group>"; };
+		FA80BFF60FB30EB6003AD5A2 /* InputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputViewController.m; sourceTree = "<group>"; };
+		FA80BFF70FB30EB6003AD5A2 /* InputViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = InputViewController.xib; path = Classes/InputViewController.xib; sourceTree = "<group>"; };
+		FA85FBDA0F31668400BBC801 /* URLView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = URLView.xib; sourceTree = "<group>"; };
+		FA85FBDE0F31670B00BBC801 /* AmazonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmazonViewController.h; sourceTree = "<group>"; };
+		FA85FBDF0F31670B00BBC801 /* AmazonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmazonViewController.m; sourceTree = "<group>"; };
+		FAA952000ECE926700E7EB49 /* exec-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exec-32.png"; sourceTree = "<group>"; };
+		FAA952020ECE92B300E7EB49 /* library_32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = library_32x32.png; sourceTree = "<group>"; };
+		FAA952040ECE94B200E7EB49 /* Aperture_32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Aperture_32.png; sourceTree = "<group>"; };
+		FAA952B30ECEB78600E7EB49 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		FAFECFD20FF34E6700FF0516 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				FA5A99080EC4584F00A9E2FD /* libsqlite3.0.dylib in Frameworks */,
+				F666E0520EDA8013007F6B34 /* CoreGraphics.framework in Frameworks */,
+				F6DE66B10F2AF5EB0012C7D7 /* SystemConfiguration.framework in Frameworks */,
+				FAFECFD30FF34E6700FF0516 /* libxml2.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FA80BFF40FB30E54003AD5A2 /* Register */,
+				FA61B0B00F132DA90074EA39 /* Status */,
+				F685EE8E0EED728D006F0A34 /* iS3_class.xcclassmodel */,
+				F63200790EDD59350050665E /* util */,
+				F632004C0EDD54890050665E /* Book */,
+				F60193950EC4A16D00BDC03D /* BookList */,
+				F60193940EC4A16300BDC03D /* setting */,
+				F60193930EC4A14D00BDC03D /* data */,
+				1D3623240D0F684500981E51 /* IS3AppDelegate.h */,
+				1D3623250D0F684500981E51 /* IS3AppDelegate.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* iS3.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* iS3_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F6F41A560F47E4EB00C70B54 /* Prefix.pch */,
+				FA9DF3510EEE4A3300CCC519 /* image */,
+				FA9DF3500EEE4A2300CCC519 /* xib */,
+				FA5A990F0EC458FF00A9E2FD /* iS3.sqlite */,
+				F6AF17460F4D755B00406C68 /* about.txt */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				F6955F380F24D038007C5734 /* Default_old.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAFECFD20FF34E6700FF0516 /* libxml2.dylib */,
+				F6DE66B00F2AF5EB0012C7D7 /* SystemConfiguration.framework */,
+				F666E0510EDA8013007F6B34 /* CoreGraphics.framework */,
+				FA5A99070EC4584F00A9E2FD /* libsqlite3.0.dylib */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F60193930EC4A14D00BDC03D /* data */ = {
+			isa = PBXGroup;
+			children = (
+				FA5033400FF09DCB0056CD43 /* amazon */,
+				F6765D720F49A115001894CD /* StackStockBooks */,
+				FA5A99030EC4583A00A9E2FD /* User.h */,
+				FA5A99040EC4583A00A9E2FD /* User.m */,
+			);
+			name = data;
+			sourceTree = "<group>";
+		};
+		F60193940EC4A16300BDC03D /* setting */ = {
+			isa = PBXGroup;
+			children = (
+				F6AF17110F4D6F6E00406C68 /* about */,
+				FA06C3B10EC7FC7F0062397E /* SettingController.h */,
+				FA06C3B00EC7FC7F0062397E /* SettingController.m */,
+			);
+			name = setting;
+			sourceTree = "<group>";
+		};
+		F60193950EC4A16D00BDC03D /* BookList */ = {
+			isa = PBXGroup;
+			children = (
+				F657CD3A0F060B2D00216B84 /* ListMenu */,
+				FA25E3F30ED67BF8001DAED3 /* All */,
+				F6BCD5500ED5B09800C84A20 /* Wish */,
+				F6CA03BC0ED5B0D500874C72 /* UnRead */,
+				F6CA03BD0ED5B0E000874C72 /* Reading */,
+				F6BCD51B0ED5AB7000C84A20 /* Read */,
+				FA4E8B3C0ECC1723003548A5 /* cell */,
+			);
+			name = BookList;
+			sourceTree = "<group>";
+		};
+		F632004C0EDD54890050665E /* Book */ = {
+			isa = PBXGroup;
+			children = (
+				F6E8318A0F485D43004C5665 /* statusPicker */,
+				FA85FBDD0F3166E800BBC801 /* amazon */,
+				F65EB8700F28BE4600869854 /* mutter */,
+				F632004D0EDD54AA0050665E /* BookController.h */,
+				F632004E0EDD54AA0050665E /* BookController.m */,
+			);
+			name = Book;
+			sourceTree = "<group>";
+		};
+		F63200790EDD59350050665E /* util */ = {
+			isa = PBXGroup;
+			children = (
+				F6DE66A60F2AF5080012C7D7 /* NetworkStatus */,
+				FA71CACE0EF770A1009663D7 /* ImageStore */,
+				F6C522550EDC2E7A00E9A419 /* NowLoading.h */,
+				F6C522560EDC2E7A00E9A419 /* NowLoading.m */,
+				F6A97A300EE14DAF007900B4 /* Image.h */,
+				F6A97A310EE14DAF007900B4 /* Image.m */,
+			);
+			name = util;
+			sourceTree = "<group>";
+		};
+		F657CD3A0F060B2D00216B84 /* ListMenu */ = {
+			isa = PBXGroup;
+			children = (
+				F657CD3C0F060B4B00216B84 /* ListMenuController.h */,
+				F657CD3D0F060B4B00216B84 /* ListMenuController.m */,
+			);
+			name = ListMenu;
+			sourceTree = "<group>";
+		};
+		F65EB8700F28BE4600869854 /* mutter */ = {
+			isa = PBXGroup;
+			children = (
+				F65EB8710F28BE5E00869854 /* MutterController.h */,
+				F65EB8720F28BE5E00869854 /* MutterController.m */,
+				F63C28FC0FE39598001C1DE6 /* MutterDetailViewController.h */,
+				F63C28FD0FE39598001C1DE6 /* MutterDetailViewController.m */,
+			);
+			name = mutter;
+			sourceTree = "<group>";
+		};
+		F6765D720F49A115001894CD /* StackStockBooks */ = {
+			isa = PBXGroup;
+			children = (
+				F601939D0EC4A21700BDC03D /* StackStockBooks.h */,
+				F601939E0EC4A21700BDC03D /* StackStockBooks.m */,
+				F6765D6D0F499F9E001894CD /* UpdateBookStatus.h */,
+				F6765D6E0F499F9E001894CD /* UpdateBookStatus.m */,
+			);
+			name = StackStockBooks;
+			sourceTree = "<group>";
+		};
+		F6AF17110F4D6F6E00406C68 /* about */ = {
+			isa = PBXGroup;
+			children = (
+				F6AF17120F4D6F8800406C68 /* AboutViewController.h */,
+				F6AF17130F4D6F8800406C68 /* AboutViewController.m */,
+			);
+			name = about;
+			sourceTree = "<group>";
+		};
+		F6BCD51B0ED5AB7000C84A20 /* Read */ = {
+			isa = PBXGroup;
+			children = (
+				F6BCD51C0ED5AB9100C84A20 /* ReadBooksListController.h */,
+				F6BCD51D0ED5AB9100C84A20 /* ReadBooksListController.m */,
+			);
+			name = Read;
+			sourceTree = "<group>";
+		};
+		F6BCD5500ED5B09800C84A20 /* Wish */ = {
+			isa = PBXGroup;
+			children = (
+				F6CA03BE0ED5B10D00874C72 /* WishBooksListController.h */,
+				F6CA03BF0ED5B10E00874C72 /* WishBooksListController.m */,
+			);
+			name = Wish;
+			sourceTree = "<group>";
+		};
+		F6CA03BC0ED5B0D500874C72 /* UnRead */ = {
+			isa = PBXGroup;
+			children = (
+				F6CA03C10ED5B12100874C72 /* UnReadBooksListController.h */,
+				F6CA03C20ED5B12100874C72 /* UnReadBooksListController.m */,
+			);
+			name = UnRead;
+			sourceTree = "<group>";
+		};
+		F6CA03BD0ED5B0E000874C72 /* Reading */ = {
+			isa = PBXGroup;
+			children = (
+				F6CA03C40ED5B13000874C72 /* ReadingBooksListController.h */,
+				F6CA03C50ED5B13000874C72 /* ReadingBooksListController.m */,
+			);
+			name = Reading;
+			sourceTree = "<group>";
+		};
+		F6DE66A60F2AF5080012C7D7 /* NetworkStatus */ = {
+			isa = PBXGroup;
+			children = (
+				F6DE66A70F2AF54B0012C7D7 /* Reachability.h */,
+				F6DE66A80F2AF54B0012C7D7 /* Reachability.m */,
+			);
+			name = NetworkStatus;
+			sourceTree = "<group>";
+		};
+		F6E8318A0F485D43004C5665 /* statusPicker */ = {
+			isa = PBXGroup;
+			children = (
+				F6E8318B0F485D70004C5665 /* StatusPickerViewController.h */,
+				F6E8318C0F485D71004C5665 /* StatusPickerViewController.m */,
+			);
+			name = statusPicker;
+			sourceTree = "<group>";
+		};
+		FA25E3F30ED67BF8001DAED3 /* All */ = {
+			isa = PBXGroup;
+			children = (
+				FA06C3C00EC7FE010062397E /* AllBookListController.h */,
+				FA06C3C10EC7FE010062397E /* AllBookListController.m */,
+			);
+			name = All;
+			sourceTree = "<group>";
+		};
+		FA4E8B3C0ECC1723003548A5 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				FA4E8B300ECC14AF003548A5 /* BookListCell.h */,
+				FA4E8B310ECC14AF003548A5 /* BookListCell.m */,
+				FA4E8B350ECC15FE003548A5 /* BookListCellController.h */,
+				FA4E8B360ECC15FE003548A5 /* BookListCellController.m */,
+			);
+			name = cell;
+			sourceTree = "<group>";
+		};
+		FA5033400FF09DCB0056CD43 /* amazon */ = {
+			isa = PBXGroup;
+			children = (
+				FA5033410FF09DDF0056CD43 /* Amazon.h */,
+				FA5033420FF09DDF0056CD43 /* Amazon.m */,
+			);
+			name = amazon;
+			sourceTree = "<group>";
+		};
+		FA61B0B00F132DA90074EA39 /* Status */ = {
+			isa = PBXGroup;
+			children = (
+				FA61B0BF0F132DF00074EA39 /* StatusViewController.h */,
+				FA61B0C00F132DF00074EA39 /* StatusViewController.m */,
+			);
+			name = Status;
+			sourceTree = "<group>";
+		};
+		FA71CACE0EF770A1009663D7 /* ImageStore */ = {
+			isa = PBXGroup;
+			children = (
+				FA71CACF0EF770A1009663D7 /* HttpClient.h */,
+				FA71CAD00EF770A1009663D7 /* HttpClient.m */,
+				FA71CAD10EF770A1009663D7 /* ImageDownloader.h */,
+				FA71CAD20EF770A1009663D7 /* ImageDownloader.m */,
+				FA71CAD30EF770A1009663D7 /* ImageStore.h */,
+				FA71CAD40EF770A1009663D7 /* ImageStore.m */,
+				FA71CAD50EF770A1009663D7 /* StringHelper.h */,
+				FA71CAD60EF770A1009663D7 /* StringHelper.m */,
+			);
+			name = ImageStore;
+			path = ../ImageStore;
+			sourceTree = "<group>";
+		};
+		FA80BFF40FB30E54003AD5A2 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				FA80BFF50FB30EB6003AD5A2 /* InputViewController.h */,
+				FA80BFF60FB30EB6003AD5A2 /* InputViewController.m */,
+			);
+			name = Register;
+			sourceTree = "<group>";
+		};
+		FA85FBDD0F3166E800BBC801 /* amazon */ = {
+			isa = PBXGroup;
+			children = (
+				FA85FBDE0F31670B00BBC801 /* AmazonViewController.h */,
+				FA85FBDF0F31670B00BBC801 /* AmazonViewController.m */,
+			);
+			name = amazon;
+			sourceTree = "<group>";
+		};
+		FA9DF3500EEE4A2300CCC519 /* xib */ = {
+			isa = PBXGroup;
+			children = (
+				FA80BFF70FB30EB6003AD5A2 /* InputViewController.xib */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				F657CD890F0616F600216B84 /* tableListView.xib */,
+				FA4E8B2D0ECC13F5003548A5 /* BookListCell.xib */,
+				FA06C4B40EC828D90062397E /* BookListView.xib */,
+				F63200500EDD54BC0050665E /* Book.xib */,
+				F6E831870F485D36004C5665 /* PickerView.xib */,
+				F64E1DAD0F27818D00F35FE9 /* mutterView.xib */,
+				F63C28FF0FE395A8001C1DE6 /* MutterDetailView.xib */,
+				FA85FBDA0F31668400BBC801 /* URLView.xib */,
+				F6AF17150F4D6F9D00406C68 /* AboutView.xib */,
+				FA06C3990EC7F9A40062397E /* Setting.xib */,
+			);
+			name = xib;
+			sourceTree = "<group>";
+		};
+		FA9DF3510EEE4A3300CCC519 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				FA48A9770FE7302C00E65C69 /* amazon.png */,
+				FA48A9750FE72F4800E65C69 /* switchStack.png */,
+				F69055760F0DC37E0004AC30 /* testIcon.xcf */,
+				F63E731D0F2B6A07007D825E /* defaultBookImage.gif */,
+				FAA952B30ECEB78600E7EB49 /* icon.png */,
+				FAA952000ECE926700E7EB49 /* exec-32.png */,
+				F6CD0CA20FF8FF490062BF5D /* defaultBase.xcf */,
+				F6CD0CA30FF8FF490062BF5D /* Default.png */,
+				FA0634730EE7A65500B5963C /* Default_old.png */,
+				FAA952040ECE94B200E7EB49 /* Aperture_32.png */,
+				FAA952020ECE92B300E7EB49 /* library_32x32.png */,
+				FA73D56D0FA87DAB00DA0CAD /* library_32x32_Plus.png */,
+				F68297D20F062F3800FC698E /* library_32x32_2.png */,
+				FA06C3950EC7F75D0062397E /* ikony-folder.png */,
+				FA06C3930EC7F7260062397E /* CanonDigitalCamera.png */,
+			);
+			name = image;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* iS3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "iS3" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iS3;
+			productName = iS3;
+			productReference = 1D6058910D05DD3D006BFB54 /* iS3.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = NO;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "iS3" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* iS3 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				FA5A99100EC458FF00A9E2FD /* iS3.sqlite in Resources */,
+				FA06C3940EC7F7260062397E /* CanonDigitalCamera.png in Resources */,
+				FA06C3960EC7F75D0062397E /* ikony-folder.png in Resources */,
+				FA06C39A0EC7F9A40062397E /* Setting.xib in Resources */,
+				FA06C4B50EC828D90062397E /* BookListView.xib in Resources */,
+				FA4E8B2E0ECC13F5003548A5 /* BookListCell.xib in Resources */,
+				FAA952010ECE926700E7EB49 /* exec-32.png in Resources */,
+				FAA952030ECE92B300E7EB49 /* library_32x32.png in Resources */,
+				FAA952050ECE94B200E7EB49 /* Aperture_32.png in Resources */,
+				FAA952B40ECEB78600E7EB49 /* icon.png in Resources */,
+				F63200510EDD54BC0050665E /* Book.xib in Resources */,
+				FA0634740EE7A65500B5963C /* Default_old.png in Resources */,
+				F685EE8F0EED728D006F0A34 /* iS3_class.xcclassmodel in Resources */,
+				F657CD8A0F0616F600216B84 /* tableListView.xib in Resources */,
+				F68297D30F062F3800FC698E /* library_32x32_2.png in Resources */,
+				F690557A0F0DC37E0004AC30 /* testIcon.xcf in Resources */,
+				F6955F390F24D038007C5734 /* Default_old.png in Resources */,
+				F64E1DAE0F27818D00F35FE9 /* mutterView.xib in Resources */,
+				F63E731E0F2B6A07007D825E /* defaultBookImage.gif in Resources */,
+				FA85FBDB0F31668400BBC801 /* URLView.xib in Resources */,
+				F6E831880F485D36004C5665 /* PickerView.xib in Resources */,
+				F6AF17160F4D6F9D00406C68 /* AboutView.xib in Resources */,
+				F6AF17470F4D755B00406C68 /* about.txt in Resources */,
+				FA73D56E0FA87DAB00DA0CAD /* library_32x32_Plus.png in Resources */,
+				FA80BFF90FB30EB6003AD5A2 /* InputViewController.xib in Resources */,
+				F63C29000FE395A8001C1DE6 /* MutterDetailView.xib in Resources */,
+				FA48A9760FE72F4800E65C69 /* switchStack.png in Resources */,
+				FA48A9780FE7302C00E65C69 /* amazon.png in Resources */,
+				F6CD0CA40FF8FF490062BF5D /* defaultBase.xcf in Resources */,
+				F6CD0CA50FF8FF490062BF5D /* Default.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* IS3AppDelegate.m in Sources */,
+				FA5A99050EC4583A00A9E2FD /* User.m in Sources */,
+				F601939F0EC4A21700BDC03D /* StackStockBooks.m in Sources */,
+				FA06C3B20EC7FC7F0062397E /* SettingController.m in Sources */,
+				FA06C3C20EC7FE010062397E /* AllBookListController.m in Sources */,
+				FA4E8B320ECC14AF003548A5 /* BookListCell.m in Sources */,
+				FA4E8B370ECC15FE003548A5 /* BookListCellController.m in Sources */,
+				F6BCD51E0ED5AB9100C84A20 /* ReadBooksListController.m in Sources */,
+				F6CA03C00ED5B10E00874C72 /* WishBooksListController.m in Sources */,
+				F6CA03C30ED5B12100874C72 /* UnReadBooksListController.m in Sources */,
+				F6CA03C60ED5B13000874C72 /* ReadingBooksListController.m in Sources */,
+				F6C522570EDC2E7A00E9A419 /* NowLoading.m in Sources */,
+				F632004F0EDD54AA0050665E /* BookController.m in Sources */,
+				F6A97A320EE14DAF007900B4 /* Image.m in Sources */,
+				FA71CAD70EF770A1009663D7 /* HttpClient.m in Sources */,
+				FA71CAD80EF770A1009663D7 /* ImageDownloader.m in Sources */,
+				FA71CAD90EF770A1009663D7 /* ImageStore.m in Sources */,
+				FA71CADA0EF770A1009663D7 /* StringHelper.m in Sources */,
+				F657CD3E0F060B4B00216B84 /* ListMenuController.m in Sources */,
+				FA61B0C10F132DF00074EA39 /* StatusViewController.m in Sources */,
+				F65EB8730F28BE5E00869854 /* MutterController.m in Sources */,
+				F6DE66A90F2AF54B0012C7D7 /* Reachability.m in Sources */,
+				FA85FBE00F31670B00BBC801 /* AmazonViewController.m in Sources */,
+				F6E8318D0F485D71004C5665 /* StatusPickerViewController.m in Sources */,
+				F6765D6F0F499F9E001894CD /* UpdateBookStatus.m in Sources */,
+				F6AF17140F4D6F8800406C68 /* AboutViewController.m in Sources */,
+				FA80BFF80FB30EB6003AD5A2 /* InputViewController.m in Sources */,
+				F63C28FE0FE39598001C1DE6 /* MutterDetailViewController.m in Sources */,
+				FA5033430FF09DDF0056CD43 /* Amazon.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: ";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Noboru Yanagisawa";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = iS3_Prefix.pch;
+				HEADER_SEARCH_PATHS = "${SDK_DIR}/usr/include/libxml2/**";
+				INFOPLIST_FILE = Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = iS3;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = iS3_Prefix.pch;
+				HEADER_SEARCH_PATHS = "${SDK_DIR}/usr/include/libxml2/**";
+				INFOPLIST_FILE = Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = iS3;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ADDITIONAL_SDKS = "$HOME/Library/SDKs/JSON/$(PLATFORM_NAME).sdk";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "${SDK_DIR}/usr/include/libxml2/**";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ljson",
+					"-ObjC",
+				);
+				PREBINDING = NO;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos3.0;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ADDITIONAL_SDKS = "$HOME/Library/SDKs/JSON/$(PLATFORM_NAME).sdk";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Noboru Yanagisawa";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Noboru Yanagisawa";
+				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "${SDK_DIR}/usr/include/libxml2/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 2.1;
+				OTHER_LDFLAGS = (
+					"-ljson",
+					"-ObjC",
+				);
+				PREBINDING = NO;
+				PROVISIONING_PROFILE = "50276AE8-44FA-4FBE-80E8-3A6B3703003D";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "50276AE8-44FA-4FBE-80E8-3A6B3703003D";
+				SDKROOT = iphoneos3.0;
+			};
+			name = Release;
+		};
+		F60176710F4EFC05006C34F6 /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ADDITIONAL_SDKS = "$HOME/Library/SDKs/JSON/$(PLATFORM_NAME).sdk";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Noboru Yanagisawa";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Noboru Yanagisawa";
+				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "${SDK_DIR}/usr/include/libxml2/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 2.1;
+				OTHER_LDFLAGS = (
+					"-ljson",
+					"-ObjC",
+				);
+				PREBINDING = NO;
+				PROVISIONING_PROFILE = "276B810F-767C-4119-A397-CC3F0A22D06C";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "276B810F-767C-4119-A397-CC3F0A22D06C";
+				SDKROOT = iphoneos3.0;
+			};
+			name = AppStore;
+		};
+		F60176720F4EFC05006C34F6 /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = iS3_Prefix.pch;
+				HEADER_SEARCH_PATHS = "${SDK_DIR}/usr/include/libxml2/**";
+				INFOPLIST_FILE = Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = iS3;
+			};
+			name = AppStore;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "iS3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+				F60176720F4EFC05006C34F6 /* AppStore */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "iS3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+				F60176710F4EFC05006C34F6 /* AppStore */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
