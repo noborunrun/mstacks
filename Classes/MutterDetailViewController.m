@@ -18,16 +18,20 @@
 @synthesize mutter;
 @synthesize mutterArray;
 @synthesize userArray;
+@synthesize toolbarView;
 //@synthesize mutterArrayIndex;
 //@synthesize imageStore;
 
 UIImage *userImageTemp;
 ImageStore *imageStore;
+BOOL toolbarAppear;
 
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
         // Custom initialization
+      toolbarAppear = YES;
+      toolbarView.hidden = NO;
     }
     return self;
 }
@@ -39,25 +43,22 @@ ImageStore *imageStore;
 */
 
 - (void) setMutterItem {
-	//if (imageStore == nil) {
-//		imageStore = [[ImageStore alloc] initWithDelegate:self];
-//	}
-	//imageStore.delegate = self;
-	
-	//userImageTemp = [imageStore getImage:[[mutterArray objectAtIndex:0] objectForKey:@"icon_uri"]];
+	if (imageStore == nil) {
+		imageStore = [[ImageStore alloc] initWithDelegate:self];
+	}
+	imageStore.delegate = self;
+  [imageStore getImage:[[userArray objectAtIndex:0] objectForKey:@"icon_uri"]];
 	mutterText.text = mutter;
-	//NSLog(@"%@",[[mutterArray objectAtIndex:0] objectForKey:@"user_id"]);
-	//NSLog(@"%@",[[mutterArray objectAtIndex:0] objectForKey:@"name"]);
-	self.userID = [[mutterArray objectAtIndex:0] objectForKey:@"user_id"];
-	[self.userName setText:[[mutterArray objectAtIndex:0] objectForKey:@"name"]];
-//	self.userImage.image = [imageStore getImage:[[mutterArray objectAtIndex:0] objectForKey:@"icon_uri"]];
+	self.userID = [[userArray objectAtIndex:0] objectForKey:@"user_id"];
+	[self.userName setText:[[userArray objectAtIndex:0] objectForKey:@"name"]];
 }
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
-	//if (imageStore == nil) {
-//		imageStore = [[ImageStore alloc] initWithDelegate:self];
-//	}
+	if (imageStore == nil) {
+		imageStore = [[ImageStore alloc] initWithDelegate:self];
+	}
+  userImageTemp = [[UIImage alloc] init];
 	[self setMutterItem];
     [super viewDidLoad];
 }
@@ -77,19 +78,39 @@ ImageStore *imageStore;
 	// Release any cached data, images, etc that aren't in use.
 }
 
+- (void)viewDidDisappear:(BOOL)animated {
+   imageStore.delegate = nil;
+   imageStore = nil; 
+}
+
 - (void)viewDidUnload {
 	// Release any retained subviews of the main view.
 	// e.g. self.myOutlet = nil;
+ // imageStore.delegate = nil;
+//  imageStore = nil;
 }
+
+
+- (IBAction)showToolbar:(id)sender {
+//  if (toolbarAppear == YES) {
+//    toolbarView.hidden = NO;
+//    toolbarAppear = NO;
+//  }else {
+//    toolbarView.hidden = YES;
+//    toolbarAppear = YES;
+//  }
+}
+
 
 
 - (void)dealloc {
     [super dealloc];
 }
 
+
+//ImageStoreDelegate
 - (void)imageStoreDidGetNewImage:(ImageStore*)sender url:(NSString*)url {
-	self.userImage.image = userImageTemp;
-	
+	self.userImage.image = [sender getImage:url];
 }
 
 

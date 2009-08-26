@@ -445,8 +445,9 @@ NSMutableArray *userInfo;
 //  //NSLog(@"%@",url);
   accessURL = [NSURL URLWithString:url];
   jsonString = [[NSString alloc] initWithContentsOfURL:accessURL encoding:NSUTF8StringEncoding error:nil];
+  NSLog(@"%@",jsonString);
   [userInfo addObjectsFromArray: [self jsonPerserWith:jsonString KindOf:2]];
-  
+  NSLog(@"%@",userInfo);
 }
 
 //- (id)getBookInfoWithISBN:(NSString *)isbn13 I {

@@ -33,7 +33,6 @@ NSMutableArray *mutterArray;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
   [self separateMutterArrayToMineOrOthers];
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
@@ -42,14 +41,15 @@ NSMutableArray *mutterArray;
 - (void)separateMutterArrayToMineOrOthers {
   mine = [[NSMutableArray alloc] init];
   others = [[NSMutableArray alloc] init];
-//  othersUserID = [[NSMutableArray alloc] init];
    NSInteger i;
   for (i=0;i<[mutterList count];i++) {
     if ([[[mutterList objectAtIndex:i] objectForKey:@"user_id"] intValue] == appDelegate.userNo) {
       [mine insertObject:[mutterList objectAtIndex:i] atIndex:[mine count]];
     }else{
       [others insertObject:[mutterList objectAtIndex:i] atIndex:[others count]];
-//      [othersUserID insertObject:[mutterList objectAtIndex:i] atIndex:[othersUserID count]];
+
+      //TODO:separate user mutter with UserID
+      
     }
 
   }
@@ -116,11 +116,9 @@ NSMutableArray *mutterArray;
 
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-  static NSString *CellIdentifier = @"Cell";
+  static NSString *CellIdentifier = @"MutterCell";
   
   UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-//	static NSString *MyIdentifier = @"BookListCell";
-//	BookListCell *cell = (BookListCell *)[tableView dequeueReusableCellWithIdentifier:MyIdentifier];
 	
   if (cell == nil) {
     cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
@@ -157,24 +155,17 @@ NSMutableArray *mutterArray;
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Navigation logic may go here. Create and push another view controller.
-	// AnotherViewController *anotherViewController = [[AnotherViewController alloc] initWithNibName:@"AnotherView" bundle:nil];
-	// [self.navigationController pushViewController:anotherViewController];
-	// [anotherViewController release];
-	//NSLog(@"%@",[tableView cellForRowAtIndexPath:indexPath].text);
 	if ([tableView cellForRowAtIndexPath:indexPath].text != @"まだつぶやいてないです。") {
-    //TODO:get UserInfo
-    //NSLog(@"%@",[[mutterList objectAtIndex:indexPath.row] objectForKey:@"user_id"]);
     StackStockBooks *ssb = [[StackStockBooks alloc] initWithGetUserInfoOfUserID:[[mutterList objectAtIndex:indexPath.row] objectForKey:@"user_id"]];
     NSMutableArray *userInfoArray = [[NSMutableArray alloc] initWithArray:ssb.userInfoArray];
-    
-    //NSLog(@"%@",userInfoArray);
     
 	MutterDetailViewController *mutterDetailViewController = [[MutterDetailViewController alloc] initWithNibName:@"MutterDetailView" bundle:nil];
 		//set MutterData
 		mutterDetailViewController.mutterArray = mutterList;
 		mutterDetailViewController.mutter = [tableView cellForRowAtIndexPath:indexPath].text;
-		
+    mutterDetailViewController.userArray = userInfoArray;
+    
+		[userInfoArray release];
 	[self.navigationController pushViewController:mutterDetailViewController animated:YES];
 		[mutterDetailViewController release];
 	}
@@ -219,7 +210,6 @@ NSMutableArray *mutterArray;
     return YES;
 }
 */
-
 
 - (void)dealloc {
   [mutterList release];

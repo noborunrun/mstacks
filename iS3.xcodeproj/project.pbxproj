@@ -13,6 +13,9 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		F601939F0EC4A21700BDC03D /* StackStockBooks.m in Sources */ = {isa = PBXBuildFile; fileRef = F601939E0EC4A21700BDC03D /* StackStockBooks.m */; };
+		F60500901036A4B4000544ED /* MutterCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F605008F1036A4B4000544ED /* MutterCellView.xib */; };
+		F60500A11036A647000544ED /* MutterCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = F60500A01036A647000544ED /* MutterCellController.m */; };
+		F60500A41036A653000544ED /* MutterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F60500A31036A653000544ED /* MutterCell.m */; };
 		F632004F0EDD54AA0050665E /* BookController.m in Sources */ = {isa = PBXBuildFile; fileRef = F632004E0EDD54AA0050665E /* BookController.m */; };
 		F63200510EDD54BC0050665E /* Book.xib in Resources */ = {isa = PBXBuildFile; fileRef = F63200500EDD54BC0050665E /* Book.xib */; };
 		F63C28FE0FE39598001C1DE6 /* MutterDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F63C28FD0FE39598001C1DE6 /* MutterDetailViewController.m */; };
@@ -43,6 +46,7 @@
 		F6DE66B10F2AF5EB0012C7D7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DE66B00F2AF5EB0012C7D7 /* SystemConfiguration.framework */; };
 		F6E831880F485D36004C5665 /* PickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6E831870F485D36004C5665 /* PickerView.xib */; };
 		F6E8318D0F485D71004C5665 /* StatusPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E8318C0F485D71004C5665 /* StatusPickerViewController.m */; };
+		F6F1300A1036901E00A75776 /* defaultUsericon.png in Resources */ = {isa = PBXBuildFile; fileRef = F6F130091036901E00A75776 /* defaultUsericon.png */; };
 		FA0634740EE7A65500B5963C /* Default_old.png in Resources */ = {isa = PBXBuildFile; fileRef = FA0634730EE7A65500B5963C /* Default_old.png */; };
 		FA06C3940EC7F7260062397E /* CanonDigitalCamera.png in Resources */ = {isa = PBXBuildFile; fileRef = FA06C3930EC7F7260062397E /* CanonDigitalCamera.png */; };
 		FA06C3960EC7F75D0062397E /* ikony-folder.png in Resources */ = {isa = PBXBuildFile; fileRef = FA06C3950EC7F75D0062397E /* ikony-folder.png */; };
@@ -88,6 +92,11 @@
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F601939D0EC4A21700BDC03D /* StackStockBooks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackStockBooks.h; sourceTree = "<group>"; };
 		F601939E0EC4A21700BDC03D /* StackStockBooks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackStockBooks.m; sourceTree = "<group>"; };
+		F605008F1036A4B4000544ED /* MutterCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MutterCellView.xib; sourceTree = "<group>"; };
+		F605009F1036A647000544ED /* MutterCellController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MutterCellController.h; sourceTree = "<group>"; };
+		F60500A01036A647000544ED /* MutterCellController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MutterCellController.m; sourceTree = "<group>"; };
+		F60500A21036A653000544ED /* MutterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MutterCell.h; sourceTree = "<group>"; };
+		F60500A31036A653000544ED /* MutterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MutterCell.m; sourceTree = "<group>"; };
 		F632004D0EDD54AA0050665E /* BookController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookController.h; sourceTree = "<group>"; };
 		F632004E0EDD54AA0050665E /* BookController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookController.m; sourceTree = "<group>"; };
 		F63200500EDD54BC0050665E /* Book.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Book.xib; sourceTree = "<group>"; };
@@ -132,6 +141,7 @@
 		F6E831870F485D36004C5665 /* PickerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickerView.xib; sourceTree = "<group>"; };
 		F6E8318B0F485D70004C5665 /* StatusPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusPickerViewController.h; sourceTree = "<group>"; };
 		F6E8318C0F485D71004C5665 /* StatusPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusPickerViewController.m; sourceTree = "<group>"; };
+		F6F130091036901E00A75776 /* defaultUsericon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultUsericon.png; sourceTree = "<group>"; };
 		F6F41A560F47E4EB00C70B54 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		FA0634730EE7A65500B5963C /* Default_old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default_old.png; sourceTree = "<group>"; };
 		FA06C3930EC7F7260062397E /* CanonDigitalCamera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CanonDigitalCamera.png; sourceTree = "<group>"; };
@@ -304,6 +314,26 @@
 			name = BookList;
 			sourceTree = "<group>";
 		};
+		F60500921036A4C1000544ED /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FA4E8B2D0ECC13F5003548A5 /* BookListCell.xib */,
+				F605008F1036A4B4000544ED /* MutterCellView.xib */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		F605009B1036A5B7000544ED /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F605009F1036A647000544ED /* MutterCellController.h */,
+				F60500A01036A647000544ED /* MutterCellController.m */,
+				F60500A21036A653000544ED /* MutterCell.h */,
+				F60500A31036A653000544ED /* MutterCell.m */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
 		F632004C0EDD54890050665E /* Book */ = {
 			isa = PBXGroup;
 			children = (
@@ -341,6 +371,7 @@
 		F65EB8700F28BE4600869854 /* mutter */ = {
 			isa = PBXGroup;
 			children = (
+				F605009B1036A5B7000544ED /* Cell */,
 				F65EB8710F28BE5E00869854 /* MutterController.h */,
 				F65EB8720F28BE5E00869854 /* MutterController.m */,
 				F63C28FC0FE39598001C1DE6 /* MutterDetailViewController.h */,
@@ -498,10 +529,10 @@
 		FA9DF3500EEE4A2300CCC519 /* xib */ = {
 			isa = PBXGroup;
 			children = (
+				F60500921036A4C1000544ED /* Cell */,
 				FA80BFF70FB30EB6003AD5A2 /* InputViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				F657CD890F0616F600216B84 /* tableListView.xib */,
-				FA4E8B2D0ECC13F5003548A5 /* BookListCell.xib */,
 				FA06C4B40EC828D90062397E /* BookListView.xib */,
 				F63200500EDD54BC0050665E /* Book.xib */,
 				F6E831870F485D36004C5665 /* PickerView.xib */,
@@ -517,6 +548,7 @@
 		FA9DF3510EEE4A3300CCC519 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				F6F130091036901E00A75776 /* defaultUsericon.png */,
 				FA48A9770FE7302C00E65C69 /* amazon.png */,
 				FA48A9750FE72F4800E65C69 /* switchStack.png */,
 				F69055760F0DC37E0004AC30 /* testIcon.xcf */,
@@ -612,6 +644,8 @@
 				FA48A9780FE7302C00E65C69 /* amazon.png in Resources */,
 				F6CD0CA40FF8FF490062BF5D /* defaultBase.xcf in Resources */,
 				F6CD0CA50FF8FF490062BF5D /* Default.png in Resources */,
+				F6F1300A1036901E00A75776 /* defaultUsericon.png in Resources */,
+				F60500901036A4B4000544ED /* MutterCellView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -652,6 +686,8 @@
 				FA80BFF80FB30EB6003AD5A2 /* InputViewController.m in Sources */,
 				F63C28FE0FE39598001C1DE6 /* MutterDetailViewController.m in Sources */,
 				FA5033430FF09DDF0056CD43 /* Amazon.m in Sources */,
+				F60500A11036A647000544ED /* MutterCellController.m in Sources */,
+				F60500A41036A653000544ED /* MutterCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

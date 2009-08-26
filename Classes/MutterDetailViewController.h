@@ -11,11 +11,14 @@
 @class ImageStore;
 
 @interface MutterDetailViewController : UIViewController {
-
+  
 	
 	IBOutlet UILabel *userName;
 	IBOutlet UIImageView *userImage;
 	IBOutlet UILabel *mutterText;
+  
+  IBOutlet UIView *toolbarView;
+  
 	NSString *userID;
 	NSString *mutter;
 	NSMutableArray *mutterArray;
@@ -32,7 +35,10 @@
 @property (nonatomic, retain) NSString *mutter;
 @property (nonatomic, retain) NSMutableArray *mutterArray;
 @property (nonatomic, retain) NSMutableArray *userArray;
+@property (nonatomic, retain) UIView *toolbarView;
 //@property (nonatomic, retain) NSInteger mutterArrayIndex;
 //@property (nonatomic, retain) ImageStore *imageStore;
+
+- (IBAction)showToolbar:(id)sender;
 
 @end

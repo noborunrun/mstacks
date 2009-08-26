@@ -24,4 +24,5 @@ ImageStore *imageStore;
 
 - (void)separateMutterArrayToMineOrOthers;
 
+
 @end

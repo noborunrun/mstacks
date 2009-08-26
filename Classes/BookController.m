@@ -147,7 +147,9 @@ BOOL toolbarAppear;
   MutterController *mutterController = [[MutterController alloc] initWithStyle:UITableViewStyleGrouped];
   mutterController.title = self.bookTitle.text;
   mutterController.mutterList = ssb.mutterArray;
+  NSLog(@"%@",ssb.mutterArray);
   [ssb release];
+
   [[self navigationController] pushViewController:mutterController animated:YES];
 }
 
