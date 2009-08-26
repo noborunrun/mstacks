@@ -27,6 +27,8 @@
   //NSLog(@"%@",status);
   ////NSLog(@"%@",bookDict);
   //[bookDict setObject:@"n/a" forKey:@"public"];
+  NSLog(@"%@",status);
+  NSLog(@"%@",[date objectAtIndex:0]);
   [bookArray addObject:bookDict];
   return bookArray;
 }

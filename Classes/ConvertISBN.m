@@ -7,6 +7,7 @@
 //
 
 #import "ConvertISBN.h"
+#include <string.h>
 
 
 @implementation ConvertISBN
@@ -35,8 +36,15 @@
   checkDigit = (11 - (checkDigit % 11)) % 11;
   *q++ = checkDigit == 10 ? 'X' : (char)(checkDigit + '0');
   *q   = '\0';
-  
-  NSString *isbn10 = [[NSString alloc] initWithCString:q];
+
+  NSLog(@"%s",ib10);
+//  char *isbn10tmp = "";
+//  for (i = 0 ; i<11 ; i++) {
+//    strcat(*isbn10tmp,ib10[i]);
+//  }
+//  NSLog(@"%@",isbn10tmp);
+  NSString *isbn10 = [[NSString alloc] initWithCString:ib10 encoding:1];
+  NSLog(@"%@",isbn10);
   return isbn10;
 }
 @end

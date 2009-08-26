@@ -1,0 +1,2 @@
+/Users/noboru/Documents/iPhoneApp/mStacks_git/Classes/WebView.m: In function '-[WebView setWebViewToInputBooks]':
+/Users/noboru/Documents/iPhoneApp/mStacks_git/Classes/WebView.m:26: warning: return makes pointer from integer without a cast

@@ -50,7 +50,7 @@
 							<double key="NSSize">1.500000e+01</double>
 							<int key="NSfFlags">16</int>
 						</object>
-						<object class="NSColor" key="IBUIHighlightedTitleColor">
+						<object class="NSColor" key="IBUIHighlightedTitleColor" id="24799677">
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MQA</bytes>
 						</object>
@@ -58,7 +58,7 @@
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MC4xOTYwNzg0MyAwLjMwOTgwMzkzIDAuNTIxNTY4NjYAA</bytes>
 						</object>
-						<object class="NSColor" key="IBUINormalTitleShadowColor">
+						<object class="NSColor" key="IBUINormalTitleShadowColor" id="808794553">
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MC41AA</bytes>
 						</object>
@@ -196,6 +196,28 @@
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="773685755"/>
 					</object>
+					<object class="IBUIButton" id="57303285">
+						<reference key="NSNextResponder" ref="191373211"/>
+						<int key="NSvFlags">292</int>
+						<string key="NSFrame">{{143, 139}, {149, 14}}</string>
+						<reference key="NSSuperview" ref="191373211"/>
+						<bool key="IBUIOpaque">NO</bool>
+						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
+						<int key="IBUIContentHorizontalAlignment">0</int>
+						<int key="IBUIContentVerticalAlignment">0</int>
+						<object class="NSFont" key="IBUIFont">
+							<string key="NSName">Helvetica-Bold</string>
+							<double key="NSSize">1.200000e+01</double>
+							<int key="NSfFlags">16</int>
+						</object>
+						<string type="base64-UTF8" key="IBUINormalTitle">QVBJVG9rZW7jga7norroqo3jga/jgZPjgaHjgok</string>
+						<reference key="IBUIHighlightedTitleColor" ref="24799677"/>
+						<object class="NSColor" key="IBUINormalTitleColor">
+							<int key="NSColorSpace">1</int>
+							<bytes key="NSRGB">MC4xOTYwNzg0MyAwLjMwOTgwMzkzIDAuNTIxNTY4NjYAA</bytes>
+						</object>
+						<reference key="IBUINormalTitleShadowColor" ref="808794553"/>
+					</object>
 				</object>
 				<string key="NSFrameSize">{320, 387}</string>
 				<reference key="NSSuperview"/>
@@ -280,6 +302,15 @@
 					</object>
 					<int key="connectionID">71</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">openURL:</string>
+						<reference key="source" ref="57303285"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">73</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -304,6 +335,7 @@
 							<reference ref="917163278"/>
 							<reference ref="343008905"/>
 							<reference ref="355890904"/>
+							<reference ref="57303285"/>
 						</object>
 						<reference key="parent" ref="360949347"/>
 					</object>
@@ -353,6 +385,11 @@
 						<reference key="object" ref="355890904"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">72</int>
+						<reference key="object" ref="57303285"/>
+						<reference key="parent" ref="191373211"/>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -370,12 +407,14 @@
 					<string>68.IBPluginDependency</string>
 					<string>7.IBPluginDependency</string>
 					<string>70.IBPluginDependency</string>
+					<string>72.IBPluginDependency</string>
 				</object>
 				<object class="NSMutableArray" key="dict.values">
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>SettingController</string>
 					<string>UIResponder</string>
 					<string>{{293, 21}, {320, 480}}</string>
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -406,7 +445,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">71</int>
+			<int key="maxID">73</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -420,10 +459,12 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>about:</string>
 							<string>backgroudClick:</string>
+							<string>openURL:</string>
 							<string>setting:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 							<string>id</string>

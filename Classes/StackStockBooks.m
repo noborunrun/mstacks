@@ -141,7 +141,7 @@ NSMutableArray *userInfo;
   }
 	[jsonParser release];
 	
-	//NSLog(@"%@",list);
+	NSLog(@"%@",list);
 	return list;
 }
 
@@ -204,6 +204,7 @@ NSMutableArray *userInfo;
 		bookInfo = [[NSMutableArray alloc] init];
 	[self getBookInfoWithISBN:isbn];
 		bookInfoArray = bookInfo;
+    NSLog(@"%@",bookInfoArray);
 		
 	}
 }
@@ -432,6 +433,7 @@ NSMutableArray *userInfo;
 	//NSLog(@"%@",url);
 	accessURL = [NSURL URLWithString:url];
 	jsonString = [[NSString alloc] initWithContentsOfURL:accessURL encoding:NSUTF8StringEncoding error:nil];
+  NSLog(@"%@",jsonString);
 	//convert json to array
 	[bookInfo addObjectsFromArray: [self jsonPerserWith:jsonString KindOf:2]];
 	

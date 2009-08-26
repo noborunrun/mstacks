@@ -35,6 +35,9 @@
 		F6AF17140F4D6F8800406C68 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6AF17130F4D6F8800406C68 /* AboutViewController.m */; };
 		F6AF17160F4D6F9D00406C68 /* AboutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6AF17150F4D6F9D00406C68 /* AboutView.xib */; };
 		F6AF17470F4D755B00406C68 /* about.txt in Resources */ = {isa = PBXBuildFile; fileRef = F6AF17460F4D755B00406C68 /* about.txt */; };
+		F6B7159310426BC6002821C2 /* SSBGenerateUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B7159210426BC6002821C2 /* SSBGenerateUrl.m */; };
+		F6B7159610426D39002821C2 /* SSBWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B7159510426D39002821C2 /* SSBWebViewController.m */; };
+		F6B715DF104296E1002821C2 /* ConvertISBN.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B715DE104296E1002821C2 /* ConvertISBN.m */; };
 		F6BCD51E0ED5AB9100C84A20 /* ReadBooksListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BCD51D0ED5AB9100C84A20 /* ReadBooksListController.m */; };
 		F6C522570EDC2E7A00E9A419 /* NowLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C522560EDC2E7A00E9A419 /* NowLoading.m */; };
 		F6CA03C00ED5B10E00874C72 /* WishBooksListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6CA03BF0ED5B10E00874C72 /* WishBooksListController.m */; };
@@ -123,6 +126,12 @@
 		F6AF17130F4D6F8800406C68 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		F6AF17150F4D6F9D00406C68 /* AboutView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutView.xib; sourceTree = "<group>"; };
 		F6AF17460F4D755B00406C68 /* about.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = about.txt; sourceTree = "<group>"; };
+		F6B7159110426BC6002821C2 /* SSBGenerateUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSBGenerateUrl.h; sourceTree = "<group>"; };
+		F6B7159210426BC6002821C2 /* SSBGenerateUrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSBGenerateUrl.m; sourceTree = "<group>"; };
+		F6B7159410426D39002821C2 /* SSBWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSBWebViewController.h; sourceTree = "<group>"; };
+		F6B7159510426D39002821C2 /* SSBWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSBWebViewController.m; sourceTree = "<group>"; };
+		F6B715DD104296E1002821C2 /* ConvertISBN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConvertISBN.h; sourceTree = "<group>"; };
+		F6B715DE104296E1002821C2 /* ConvertISBN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConvertISBN.m; sourceTree = "<group>"; };
 		F6BCD51C0ED5AB9100C84A20 /* ReadBooksListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadBooksListController.h; sourceTree = "<group>"; };
 		F6BCD51D0ED5AB9100C84A20 /* ReadBooksListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadBooksListController.m; sourceTree = "<group>"; };
 		F6C522550EDC2E7A00E9A419 /* NowLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NowLoading.h; sourceTree = "<group>"; };
@@ -355,6 +364,8 @@
 				F6C522560EDC2E7A00E9A419 /* NowLoading.m */,
 				F6A97A300EE14DAF007900B4 /* Image.h */,
 				F6A97A310EE14DAF007900B4 /* Image.m */,
+				F6B715DD104296E1002821C2 /* ConvertISBN.h */,
+				F6B715DE104296E1002821C2 /* ConvertISBN.m */,
 			);
 			name = util;
 			sourceTree = "<group>";
@@ -387,6 +398,8 @@
 				F601939E0EC4A21700BDC03D /* StackStockBooks.m */,
 				F6765D6D0F499F9E001894CD /* UpdateBookStatus.h */,
 				F6765D6E0F499F9E001894CD /* UpdateBookStatus.m */,
+				F6B7159110426BC6002821C2 /* SSBGenerateUrl.h */,
+				F6B7159210426BC6002821C2 /* SSBGenerateUrl.m */,
 			);
 			name = StackStockBooks;
 			sourceTree = "<group>";
@@ -513,6 +526,8 @@
 			children = (
 				FA80BFF50FB30EB6003AD5A2 /* InputViewController.h */,
 				FA80BFF60FB30EB6003AD5A2 /* InputViewController.m */,
+				F6B7159410426D39002821C2 /* SSBWebViewController.h */,
+				F6B7159510426D39002821C2 /* SSBWebViewController.m */,
 			);
 			name = Register;
 			sourceTree = "<group>";
@@ -688,6 +703,9 @@
 				FA5033430FF09DDF0056CD43 /* Amazon.m in Sources */,
 				F60500A11036A647000544ED /* MutterCellController.m in Sources */,
 				F60500A41036A653000544ED /* MutterCell.m in Sources */,
+				F6B7159310426BC6002821C2 /* SSBGenerateUrl.m in Sources */,
+				F6B7159610426D39002821C2 /* SSBWebViewController.m in Sources */,
+				F6B715DF104296E1002821C2 /* ConvertISBN.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -738,8 +756,8 @@
 				ADDITIONAL_SDKS = "$HOME/Library/SDKs/JSON/$(PLATFORM_NAME).sdk";
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CODE_SIGN_ENTITLEMENTS = "";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Noboru Yanagisawa (A2KGBG6TFZ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Noboru Yanagisawa (A2KGBG6TFZ)";
 				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -751,8 +769,8 @@
 					"-ObjC",
 				);
 				PREBINDING = NO;
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE = "2FCBE037-DF12-4713-AE2D-184A846B69E0";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2FCBE037-DF12-4713-AE2D-184A846B69E0";
 				SDKROOT = iphoneos3.0;
 			};
 			name = Debug;
@@ -762,8 +780,8 @@
 			buildSettings = {
 				ADDITIONAL_SDKS = "$HOME/Library/SDKs/JSON/$(PLATFORM_NAME).sdk";
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Noboru Yanagisawa";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Noboru Yanagisawa";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Noboru Yanagisawa (A2KGBG6TFZ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Noboru Yanagisawa (A2KGBG6TFZ)";
 				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -775,8 +793,8 @@
 					"-ObjC",
 				);
 				PREBINDING = NO;
-				PROVISIONING_PROFILE = "50276AE8-44FA-4FBE-80E8-3A6B3703003D";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "50276AE8-44FA-4FBE-80E8-3A6B3703003D";
+				PROVISIONING_PROFILE = "2FCBE037-DF12-4713-AE2D-184A846B69E0";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2FCBE037-DF12-4713-AE2D-184A846B69E0";
 				SDKROOT = iphoneos3.0;
 			};
 			name = Release;
@@ -786,8 +804,8 @@
 			buildSettings = {
 				ADDITIONAL_SDKS = "$HOME/Library/SDKs/JSON/$(PLATFORM_NAME).sdk";
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Noboru Yanagisawa";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Noboru Yanagisawa";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Noboru Yanagisawa (A2KGBG6TFZ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Noboru Yanagisawa (A2KGBG6TFZ)";
 				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -799,8 +817,8 @@
 					"-ObjC",
 				);
 				PREBINDING = NO;
-				PROVISIONING_PROFILE = "276B810F-767C-4119-A397-CC3F0A22D06C";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "276B810F-767C-4119-A397-CC3F0A22D06C";
+				PROVISIONING_PROFILE = "2FCBE037-DF12-4713-AE2D-184A846B69E0";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2FCBE037-DF12-4713-AE2D-184A846B69E0";
 				SDKROOT = iphoneos3.0;
 			};
 			name = AppStore;

@@ -45,6 +45,7 @@
 - (id) initWithDataAboutDefaultUser;
 - (id)initWithDataAboutMutterOfBookID:(NSString *)BookID;
 - (void)initWithUpdateStatusWith:(NSArray *)bookArray;
+- (id) initWithGetBookInfoOfISBN:(NSString *)isbn;
 - (void) setBookList;
 - (void)getReadBookListWithURL:(NSString *)fixUrl;
 - (void)getWishBookListWithURL:(NSString *)fixUrl;

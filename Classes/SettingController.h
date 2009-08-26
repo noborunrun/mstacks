@@ -32,5 +32,6 @@
 - (IBAction)setting:(id)sender;
 - (IBAction) about:(id)sender;
 - (IBAction)backgroudClick:(id)sender;
+- (IBAction) openURL:(id)sender;
 
 @end

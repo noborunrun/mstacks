@@ -11,6 +11,7 @@
 #import "IS3AppDelegate.h"
 #import "user.h"
 #import "AboutViewController.h"
+#import "AmazonViewController.h"
 
 @implementation SettingController
 
@@ -90,6 +91,17 @@
   [userID resignFirstResponder];
   [apiToken resignFirstResponder];
 }
+
+- (IBAction) openURL:(id)sender {
+  NSString *URL = @"http://stack.nayutaya.jp/api"; 
+  ////NSLog(@"%@",amazonURL);
+  AmazonViewController *amazonWVController = [[AmazonViewController alloc] initWithNibName:@"URLView"  bundle:nil];
+  amazonWVController.URLString = URL;
+  //amazonWVController.title = [@"amazon:" stringByAppendingString:self.bookTitle.text];
+  [[self navigationController] pushViewController:amazonWVController animated:YES];
+  
+}
+
 
 
 // Implement loadView if you want to create a view hierarchy programmatically

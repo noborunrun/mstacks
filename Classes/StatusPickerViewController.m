@@ -59,23 +59,23 @@ NSInteger selectedRowItemCount;
 }
 
 - (IBAction)pushuSave:(id)sender {
-switch (selectedRowItemCount) {
-	case 0:
-		selectedRowItem = @"wish";
-		break;
-	case 1:
-		selectedRowItem = @"unread";
-		break;
-		
-	case 2:
-		selectedRowItem = @"reading";
-		break;
-case 3:
-	selectedRowItem = @"read";
-	break;
-	default:
-		break;
-}
+  switch (selectedRowItemCount) {
+    case 0:
+      selectedRowItem = @"wish";
+      break;
+    case 1:
+      selectedRowItem = @"unread";
+      break;
+      
+    case 2:
+      selectedRowItem = @"reading";
+      break;
+    case 3:
+      selectedRowItem = @"read";
+      break;
+    default:
+      break;
+  }
 	//NSLog(@"%@",selectedRowItem);
   NSMutableArray *bookArray = [[NSMutableArray alloc] initWithArray:
                                [UpdateBookStatus createBookArrayWithISBN:isbn10 BookStatus:selectedRowItem]
@@ -113,9 +113,9 @@ case 3:
 /*UIPickerViewDelegate*/
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
- // selectedRowItem = [pickerItems objectAtIndex:row];
+  // selectedRowItem = [pickerItems objectAtIndex:row];
 	selectedRowItemCount = row;
-
+  
 }
 /*
  - (CGFloat)pickerView:(UIPickerView *)pickerView rowHeightForComponent:(NSInteger)component {

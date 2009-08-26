@@ -8,7 +8,7 @@
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="74"/>
+			<integer value="1"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -347,7 +347,7 @@
 								</object>
 							</object>
 						</object>
-						<string key="NSFrame">{{-1, 330}, {328, 44}}</string>
+						<string key="NSFrame">{{-1, 327}, {328, 44}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">3</int>
@@ -868,9 +868,11 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>backgroudClick:</string>
 							<string>getBookInfo:</string>
+							<string>openURL:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 						</object>

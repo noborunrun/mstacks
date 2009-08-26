@@ -15,162 +15,12 @@
 			FA4F68A710395E3D00DEFF8E /* iS3 */,
 		);
 		perUserDictionary = {
-			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
-				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
-				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
-				PBXFileTableDataSourceColumnWidthsKey = (
-					20,
-					770,
-					20,
-					48,
-					43,
-					43,
-					20,
-				);
-				PBXFileTableDataSourceColumnsKey = (
-					PBXFileDataSource_FiletypeID,
-					PBXFileDataSource_Filename_ColumnID,
-					PBXFileDataSource_Built_ColumnID,
-					PBXFileDataSource_ObjectSize_ColumnID,
-					PBXFileDataSource_Errors_ColumnID,
-					PBXFileDataSource_Warnings_ColumnID,
-					PBXFileDataSource_Target_ColumnID,
-				);
-			};
-			PBXPerProjectTemplateStateSaveDate = 272964879;
-			PBXWorkspaceStateSaveDate = 272964879;
-		};
-		perUserProjectItems = {
-			FA2DCD3610451D5600306CE3 /* PBXTextBookmark */ = FA2DCD3610451D5600306CE3 /* PBXTextBookmark */;
-			FA2DCD3710451D5600306CE3 /* PBXTextBookmark */ = FA2DCD3710451D5600306CE3 /* PBXTextBookmark */;
-			FA2DCD3810451D5600306CE3 /* PBXTextBookmark */ = FA2DCD3810451D5600306CE3 /* PBXTextBookmark */;
-			FA2DCD3910451D5600306CE3 /* PBXTextBookmark */ = FA2DCD3910451D5600306CE3 /* PBXTextBookmark */;
-			FA2DCD3B10451D5600306CE3 /* PBXTextBookmark */ = FA2DCD3B10451D5600306CE3 /* PBXTextBookmark */;
-			FA2DCD3C10451D5600306CE3 /* PBXTextBookmark */ = FA2DCD3C10451D5600306CE3 /* PBXTextBookmark */;
-			FA2DCD3D10451D5600306CE3 /* PBXTextBookmark */ = FA2DCD3D10451D5600306CE3 /* PBXTextBookmark */;
-			FA2DCD3E10451D5600306CE3 /* PBXTextBookmark */ = FA2DCD3E10451D5600306CE3 /* PBXTextBookmark */;
-			FA4F68AE103961E700DEFF8E /* PBXTextBookmark */ = FA4F68AE103961E700DEFF8E /* PBXTextBookmark */;
-			FA4F68B0103961E700DEFF8E /* PBXTextBookmark */ = FA4F68B0103961E700DEFF8E /* PBXTextBookmark */;
+			PBXPerProjectTemplateStateSaveDate = 272195133;
+			PBXWorkspaceStateSaveDate = 272195133;
 		};
 		sourceControlManager = FA4F68AC10395E5C00DEFF8E /* Source Control */;
 		userBuildSettings = {
 		};
-	};
-	F63C28FC0FE39598001C1DE6 /* MutterDetailViewController.h */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {948, 727}}";
-			sepNavSelRange = "{422, 0}";
-			sepNavVisRange = "{0, 1118}";
-		};
-	};
-	F63C28FD0FE39598001C1DE6 /* MutterDetailViewController.m */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1146, 1904}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 1168}";
-		};
-	};
-	F6E8318C0F485D71004C5665 /* StatusPickerViewController.m */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {985, 2195}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{404, 1398}";
-		};
-	};
-	FA2DCD3610451D5600306CE3 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F63C28FC0FE39598001C1DE6 /* MutterDetailViewController.h */;
-		name = "MutterDetailViewController.h: 23";
-		rLen = 0;
-		rLoc = 422;
-		rType = 0;
-		vrLen = 1118;
-		vrLoc = 0;
-	};
-	FA2DCD3710451D5600306CE3 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F6E8318C0F485D71004C5665 /* StatusPickerViewController.m */;
-		name = "StatusPickerViewController.m: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 1398;
-		vrLoc = 404;
-	};
-	FA2DCD3810451D5600306CE3 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FA80BFF60FB30EB6003AD5A2 /* InputViewController.m */;
-		name = "InputViewController.m: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 1352;
-		vrLoc = 1596;
-	};
-	FA2DCD3910451D5600306CE3 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FA2DCD3A10451D5600306CE3 /* InputViewController.m */;
-		rLen = 0;
-		rLoc = 2147483647;
-		rType = 0;
-	};
-	FA2DCD3A10451D5600306CE3 /* InputViewController.m */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.c.objc;
-		name = InputViewController.m;
-		path = /Users/yanagisawan/Documents/mStacks_git/Classes/InputViewController.m;
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1139, 1971}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{1534, 1264}";
-		};
-	};
-	FA2DCD3B10451D5600306CE3 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F63C28FC0FE39598001C1DE6 /* MutterDetailViewController.h */;
-		name = "MutterDetailViewController.h: 23";
-		rLen = 0;
-		rLoc = 422;
-		rType = 0;
-		vrLen = 1118;
-		vrLoc = 0;
-	};
-	FA2DCD3C10451D5600306CE3 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F6E8318C0F485D71004C5665 /* StatusPickerViewController.m */;
-		name = "StatusPickerViewController.m: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 1398;
-		vrLoc = 404;
-	};
-	FA2DCD3D10451D5600306CE3 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FA80BFF60FB30EB6003AD5A2 /* InputViewController.m */;
-		name = "InputViewController.m: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 1352;
-		vrLoc = 1596;
-	};
-	FA2DCD3E10451D5600306CE3 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FA2DCD3F10451D5600306CE3 /* InputViewController.m */;
-		name = "InputViewController.m: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 1264;
-		vrLoc = 1534;
-	};
-	FA2DCD3F10451D5600306CE3 /* InputViewController.m */ = {
-		isa = PBXFileReference;
-		name = InputViewController.m;
-		path = /Users/yanagisawan/Documents/mStacks_git/Classes/InputViewController.m;
-		sourceTree = "<absolute>";
 	};
 	FA4F68A710395E3D00DEFF8E /* iS3 */ = {
 		isa = PBXExecutable;
@@ -179,13 +29,12 @@
 		argumentStrings = (
 		);
 		autoAttachOnCrash = 1;
-		breakpointsEnabled = 0;
+		breakpointsEnabled = 1;
 		configStateDict = {
 		};
 		customDataFormattersEnabled = 1;
 		debuggerPlugin = GDBDebugging;
 		disassemblyDisplayState = 0;
-		dylibVariantSuffix = "";
 		enableDebugStr = 1;
 		environmentEntries = (
 		);
@@ -193,8 +42,6 @@
 		executableUserSymbolLevel = 0;
 		libgmallocEnabled = 0;
 		name = iS3;
-		savedGlobals = {
-		};
 		sourceDirectories = (
 		);
 	};
@@ -208,32 +55,5 @@
 	FA4F68AD10395E5C00DEFF8E /* Code sense */ = {
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
-	};
-	FA4F68AE103961E700DEFF8E /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F63C28FD0FE39598001C1DE6 /* MutterDetailViewController.m */;
-		name = "MutterDetailViewController.m: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 1168;
-		vrLoc = 0;
-	};
-	FA4F68B0103961E700DEFF8E /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F63C28FD0FE39598001C1DE6 /* MutterDetailViewController.m */;
-		name = "MutterDetailViewController.m: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 1168;
-		vrLoc = 0;
-	};
-	FA80BFF60FB30EB6003AD5A2 /* InputViewController.m */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1139, 2163}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{1596, 1352}";
-		};
 	};
 }
